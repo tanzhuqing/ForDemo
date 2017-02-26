@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>d4j</groupId>
+  <artifactId>demo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>demo</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+  <nd4j.version>0.7.1</nd4j.version>  
+  <dl4j.version>0.7.1</dl4j.version>  
+  <datavec.version>0.7.1</datavec.version>  
+  <scala.binary.version>2.10</scala.binary.version>  
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+<dependency>  
+    <groupId>org.nd4j</groupId>  
+    <artifactId>nd4j-native</artifactId>   
+    <version>${nd4j.version}</version>  
+</dependency>  
+<dependency>  
+    <groupId>org.deeplearning4j</groupId>  
+    <artifactId>dl4j-spark_2.11</artifactId>  
+    <version>${dl4j.version}</version>  
+</dependency>  
+ <dependency>  
+          <groupId>org.datavec</groupId>  
+          <artifactId>datavec-spark_${scala.binary.version}</artifactId>  
+          <version>${datavec.version}</version>  
+    </dependency>  
+      <dependency>  
+   <groupId>org.deeplearning4j</groupId>  
+   <artifactId>deeplearning4j-core</artifactId>  
+   <version>${dl4j.version}</version>  
+</dependency>  
+<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.11 -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-core_2.11</artifactId>
+    <version>2.0.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib_2.10 -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-mllib_2.10</artifactId>
+    <version>2.0.2</version>
+</dependency>
+<dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-hive_2.11</artifactId>
+        <version>2.0.2</version>
+</dependency>
+<dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-client</artifactId>
+        <version>2.7.3</version>
+</dependency>
+
+  </dependencies>
+</project>
